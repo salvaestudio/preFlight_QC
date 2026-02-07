@@ -5,6 +5,8 @@
 
 Requisitos: Python 3.x + opencv-python + numpy
  pip install opencv-python numpy
+
+Testado con Windows 11
  
 ### Qué hace
 
