@@ -154,6 +154,11 @@ Por eso hay sliders: para ajustar según el tipo de arte final.
 
 ---
 
+## Soporte de imágenes 16-bit (modo conservador)
+El sistema detecta automáticamente imágenes de 16-bit (por ejemplo TIFF) y las convierte internamente a 8-bit solo para el análisis de calidad. Este comportamiento es intencionado y responde a un enfoque de preflight conservador: la reducción de profundidad tonal actúa como un test de estrés que puede hacer aflorar banding, micro-blur o problemas latentes que, aunque poco visibles en 16-bit ideal, podrían manifestarse tras conversiones de color, reprocesos o flujos de imprenta agresivos. La imagen original se conserva sin degradación para el recorte y guardado de ROIs.
+
+---
+
 ## Outputs
 
 - `overlay.png`: imagen + heat total.
